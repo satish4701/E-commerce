@@ -1,0 +1,23 @@
+.Navbar_hero{
+    display: flex;
+    border-bottom: 1px solid #5d5d5d;
+    align-items: center;
+    justify-content: space-between  ;
+    padding: 15px  100px 15px 35px;
+}
+
+.input_sec input{
+height: 35px;
+line-height: 35px;
+font-size: 15px;
+border-radius: 4px;
+}
+.nav_icon_hero .nav_icon{
+   padding: 4px 8px;
+    width: 35px;
+    line-height: 35px;
+    height: 35px;
+    border: 1px solid #5d5d5d;
+    margin:  0 4px;
+    cursor: pointer;
+}

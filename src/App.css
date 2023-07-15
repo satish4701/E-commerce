@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:  sans-serif;
+}
+.hero_layout{
+    display: flex;
+}
+.hero_layout .left{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    border-right: 1px solid #5d5d5d;
+    width: 310px
+}
+.home_icon{
+    padding: 15px 0 ;
+    border-bottom: 1px solid #5d5d5d;
+    text-align: center;
+}
+.home_icon svg{
+    padding: 4px 8px;
+    width: 35px;
+    line-height: 35px;
+    height: 35px;
+    border: 1px solid #5d5d5d;
+    margin:  0 4px;
+    cursor: pointer;
+}
+
+.hero_layout .right{
+    width: calc(100% - 310px);
+    margin-left: auto;
+    
+ 
+    
+}
+
+input{
+    cursor: pointer;
+    text-transform: capitalize;
+    margin-right: 10px;
+}

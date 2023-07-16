@@ -21,11 +21,11 @@ const Color = ({handleChange}) => {
      <label htmlFor='blue'>blue</label>
      </div>
      <div>
-     <input type="radio"  value='red' name='Color'/>
+     <input type="radio"  value='red' name='Color' onChange={handleChange}/>
      <label htmlFor='red'>red</label>
      </div>
      <div>
-     <input type="radio"  value='white' name='Color'/>
+     <input type="radio"  value='white' name='Color' onChange={handleChange}/>
      <label htmlFor='white'>white</label>
      </div>
     

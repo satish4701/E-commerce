@@ -50,16 +50,34 @@ function App() {
     }
 
     if (selected) {
-      filterNewData = filterNewData.filter(({ category, color, company, newPrice, title }) => {
-        return(
-          category === selected ||
-          color === selected ||
-          company === selected ||
-          title === selected ||
-          newPrice === selected
-        )
-
-      })
+      if(selected === 'All'){
+       return(
+        filterNewData.map(
+          ({ img, title, star, reviews, prevPrice, newPrice }) => {
+            return(
+              <Card key={Math.random()}
+              img={img}
+              title={title}
+              star={star}
+              reviews={reviews}
+              prevPrice={prevPrice}
+              newPrice={newPrice} />
+              )
+          })
+        // console.log(  filterNewData =   filterNewData)
+       ) 
+      }else{
+        filterNewData = filterNewData.filter(({ category, color, company, newPrice, title }) => {
+          return(
+            category === selected ||
+            color === selected ||
+            company === selected ||
+            title === selected ||
+            newPrice === selected
+          )
+  
+        })
+      }
     }
 
     return (
